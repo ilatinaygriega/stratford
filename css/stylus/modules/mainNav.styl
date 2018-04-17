@@ -1,0 +1,24 @@
+.mainNav
+  width 100%
+  position relative
+  display flex
+  justify-content space-between
+  
+  +below($desktop)
+    justify-content flex-end
+    
+.mainNav-item
+  margin-right 4rem
+  text-decoration none
+  font-size 18px
+  color $white
+  
+  &:last-child
+    margin-right 0
+  
+  &:hover
+    font-weight 900
+    
+.mainNav-section
+  +below($desktop)
+    display none

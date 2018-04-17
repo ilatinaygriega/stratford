@@ -1,0 +1,60 @@
+.unslider-arrow
+  background-color #E1EEF9
+  padding 1rem
+  position absolute
+
+.value
+  +above($desktop)
+    .unslider-arrow.prev
+    .unslider-arrow.next
+      right 0
+      left auto
+      transform translateX(50%)
+    
+    .unslider-arrow.next
+      top 1.5rem
+
+    .unslider-arrow.prev
+      bottom 1.5rem
+  
+  +below($desktop)
+    .unslider
+      margin-bottom 2rem
+    
+    .unslider-arrow.prev
+    .unslider-arrow.next
+      bottom -2rem
+    
+.metodology
+  
+  .unslider
+    margin-top 4rem
+
+  .unslider-arrow.prev
+  .unslider-arrow.next
+    right calc(50% - (1120px / 2))
+    left auto
+    bottom 0
+    transform translateY(50%)
+    
+    +below($desktop)
+      right calc(50% - 45%)
+  
+  .unslider-arrow.prev
+    right calc(50% - (1120px / 2) + 4rem)
+    
+    +below($desktop)
+      right calc(50% - 45% + 4rem)
+      
+    +below($mobile)
+      right auto
+      
+.unslider-counter
+  color white
+  position absolute
+  right 2.5rem
+  bottom 2.5rem
+  
+  +below($mobile)
+    right 50%
+    transform translateX(50%)

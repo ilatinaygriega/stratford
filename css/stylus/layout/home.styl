@@ -1,0 +1,195 @@
+.about-us
+  wrapped()
+  padding-bottom 6rem
+  position relative
+  display flex
+  justify-content center
+  flex-wrap wrap
+  
+.value
+  padding 2rem 4rem
+  position relative
+  max-width 600px
+  background-color $brand-orange
+  color $white
+  margin-bottom 6rem
+  
+  +above($desktop)
+    transform translateY(-5rem)
+  
+  +below($desktop)
+    margin-top 6rem
+    padding 2rem
+    width 100%
+    position relative
+  
+  .title
+    color white
+    margin-bottom 2rem
+    white-space nowrap
+    text-align center
+    
+.model
+  wrapped()
+  padding-top 6rem
+  padding-bottom 6rem
+  
+.metodology
+  wrapped()
+  display flex
+  flex-wrap wrap
+  padding-top 3rem
+  position relative
+  background-color $brand-orange
+  
+  > .title
+    color white
+
+.metodology-slider
+  
+  .title
+    color $white
+    margin-bottom 1rem
+  
+  figure
+    min-width 150px
+    max-width 150px
+    margin-right 4rem
+    
+    +below($mobile)
+      margin-right 0
+      margin-bottom 2rem
+    
+  .unslider-carousel > li
+    display flex
+    align-items center
+    color $white
+    padding-bottom 5rem
+    
+    +below($mobile)
+      padding-right 1rem
+      padding-left 1rem
+      flex-direction column
+    
+.stages
+  display flex
+  flex-wrap wrap
+  
+.stages-item
+  padding 4rem
+  lost-column 1/4 0 0
+  display flex
+  flex-direction column
+  align-content center
+  justify-content center
+  text-align center
+  
+  +below(1000px)
+    lost-column 1/2 0 0
+
+  +below($mobile)
+    lost-column 1 0 0
+  
+  p
+    margin-top 2rem
+    font-weight 500
+    font-size 20px
+    color $white
+  
+.stage-01
+  background-color $brand-darkBlue
+  
+.stage-02
+  background-color $brand-lightBlue
+  
+.stage-03
+  background-color $brand-blue
+  
+.stage-04
+  background-color $brand-orange
+  
+.customers
+  wrapped()
+  padding-top 6rem
+  padding-bottom 6rem
+  display flex
+  flex-wrap wrap
+  
+  .title
+    width 100%
+    margin-bottom 4rem
+    
+.customers-row
+  width 100%
+  display flex
+  align-items center
+  justify-content space-between
+  
+  +below($mobile)
+    flex-direction column
+  
+  & + &
+    margin-top 4rem
+    
+.customers-item
+  +below($mobile)
+    margin-bottom 4rem
+    
+    &:last-child
+      margin-bottom 0
+
+.contact
+  wrapped()
+  padding-top 6rem
+  padding-bottom 6rem
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  background-color $brand-blue
+  
+  .title
+    margin-bottom 4rem
+    width 100%
+    color $white
+
+.contact-info
+  lost-column 4/12
+  
+  +below(1000px)
+    lost-column 1 0 0
+    margin-bottom 4rem
+  
+  p
+  a
+    color $white
+    font-weight 500
+  
+  a
+    text-decoration none
+  
+.mainForm
+  display flex
+  flex-wrap wrap
+  lost-column 7/12
+  
+  +below(1000px)
+    lost-column 1 0 0
+  
+  *
+    margin-bottom 1rem
+
+  .input
+    lost-column 1/2
+    
+  .message
+    lost-column 1 0 0
+ 
+.main  
+.about-us
+.metodology
+.model
+.customers
+.contact
+.footer
+  +below($desktop)
+    wrapped(90%)
